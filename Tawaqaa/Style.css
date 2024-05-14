@@ -1,0 +1,181 @@
+body {
+    font-family: 'Dubai', sans-serif;
+}
+
+img.Logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+    text-align: center;
+  
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #3e3e3e, #eeeeee, #525151);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+main #myTable {
+    background-color: transparent;
+    overflow-x: auto; /* Add horizontal scrollbar */
+    
+}
+
+table {
+    
+    background-color: rgba(81, 81, 81, 0.29); /* Transparent background */
+    border-radius: 50%;
+    text-align: center;
+    margin: .5% auto; /* Center the table horizontally */
+    width: 90%; /* Adjust width as needed */
+    border-collapse: collapse; /* Optional: collapses border between cells */
+}
+
+th, td {
+    border: 1px solid #dddddd40; /* Light gray border */
+    padding: 10px;
+
+}
+
+th {
+    background-color: #70a9c260;
+    color:#F5F5F5;
+    font-size:larger;
+
+}
+td{
+    color:#0F1419;
+    font-size:medium;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f228;
+}
+
+.check {
+    cursor: pointer;
+}
+button#cancelButton{
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #F5F5F5;
+    color: #0F1419;;
+    font-size: medium;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+button#cancelButton:hover{
+color:#70A9C2;
+}
+button#confirmButton{
+
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #70A9C2;
+    color:#F5F5F5;
+    
+    font-size: medium;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#confirmButton:hover {
+    border: .1px solid #70A9C2;
+    background-color: #F5F5F5;
+    color: #70A9C2;
+}
+.confirm-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F5F5F5;
+    padding: 20px;
+    text-align: right;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.sb{
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.confirm-dialog h3 {
+    margin-top: 0;
+}
+
+
+.notification {
+    
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#70A9C2;
+    color: #F5F5F5;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    z-index: 1001;
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.notification.hide {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% - 20px));
+}
+
+.high-risk {
+    background-color: red; /* Background color for high-risk */
+    color:#F5F5F5;
+    padding: .4rem;
+    border-radius: 2rem;
+}
+
+.medium-risk {
+    background-color:#f59e08a3; /* Background color for medium-risk */
+    color:#F5F5F5;
+    padding: .4rem;
+    border-radius: 2rem;
+}
+
+i{
+    color:"#70A9C2";
+}
+

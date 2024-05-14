@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toqi</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <img src="imgg/TogiLogo.png" alt="Logo" class="Logo">
+        </header>
+        <main>
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        
+                        <th>عدد البلاغات</th>
+                        <th>الوقت</th>
+                        <th>مستوى المياه</th>
+                        <th>الموقع</th>
+                        <th>مستوى الخطر</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>3</td>
+                        <td>6:32</td>
+                        <td>40 cm</td>
+                        <td><a href="https://maps.app.goo.gl/8wwSA27QziPpcgVQ8">
+                            <i class="fas fa-map-marker-alt" ></i> <!-- Font Awesome icon for globe -->
+                        </a>
+                        شارع فلسطين
+                        </td>
+                        <td ><p class="medium-risk">متوسط</p></td>
+                        <td><input type="checkbox" class="check"></td>
+                    </tr>
+                    <!-- Additional rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </main>
+        <!-- Confirmation dialog -->
+        <div id="confirmationDialog" class="confirm-dialog">
+            
+            <img src="imgg/roadtoqi.png" alt="Logo" class="Logo">
+            <h3>هل أنت متأكد أنك تريد حذف الإنذار؟</h3>
+            <div class="sb">
+            <button id="cancelButton">إلغاء</button>
+            <button id="confirmButton">نعم</button></div>
+            
+            
+        </div>
+
+        <!-- Notification message -->
+        <div id="notification" class="notification">
+            <img src="imgg/HappyToqi.png" alt="Logo" class="Logo">
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
